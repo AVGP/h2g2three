@@ -1,0 +1,18 @@
+newmtl default
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 0 0 0
+Ks 1 1 1
+Km 0
+
+newmtl default_body
+d 1
+Ns 1
+Ni 0
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd maps/dr2.jpg
