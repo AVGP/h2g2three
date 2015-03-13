@@ -1,0 +1,25 @@
+{
+  "name": "three-livecode-arena",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/main.js | uglifyjs -mc > app.js",
+    "dev": "watchify -v -o app.js js/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "q": "^1.1.2",
+    "three": "^0.69.0",
+    "three-world": "^2.0.0",
+    "tween": "^0.9.0",
+    "tween.js": "^0.14.0"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.1",
+    "browserify": "^8.0.3",
+    "uglify-js": "^2.4.16",
+    "watchify": "^2.2.1"
+  }
+}
