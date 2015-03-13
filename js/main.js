@@ -103,7 +103,7 @@ function runCode() {
   eval(editorElem.value);
 }
 
-window.runCode = runCode();
+window.runCode = runCode;
 
 function render() {
   stats.begin();
