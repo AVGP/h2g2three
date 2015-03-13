@@ -103,6 +103,8 @@ function runCode() {
   eval(editorElem.value);
 }
 
+window.runCode = runCode();
+
 function render() {
   stats.begin();
   cssRenderer.render(cssScene, World.getCamera());
