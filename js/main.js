@@ -6,6 +6,9 @@ var THREE = require('three'),
     OBJMTLLoader = require('./objmtlloader'),
     WebcamTexture = require('./webcam-texture');
 
+// Allow cross-origin texture loading
+THREE.ImageUtils.crossOrigin = '';
+
 var EDITOR_INITIAL_POS = new THREE.Vector3(0, 10, -50);
 
 var cssRenderer = new CSS3D.Renderer(),
