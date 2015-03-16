@@ -12,5 +12,5 @@ newmtl orig_default
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Kd maps\diffuse.jpg
-	map_Ks maps\specular.jpg
+	map_Kd maps/diffuse.jpg
+	map_Ks maps/specular.jpg
