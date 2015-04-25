@@ -2,7 +2,7 @@
 A funky live coding environment for Three.js
 
 ## Using it
-The easiest way to use it is [this online version](http://avgp.github.io/three-livecoding-arena).
+The easiest way to use it is [this online version](http://avgp.github.io/h2g2three).
 Alternatively, you can clone the repository and open the `index.html` in your browser 
 (or even better: [Use a static file server locally](https://gist.github.com/willurd/5720255))
 
