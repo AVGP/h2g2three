@@ -72,6 +72,7 @@ window.addEventListener('keyup', function(e) {
       e.preventDefault();
       break;
     case 84: // "T"
+    case 32: // space bar
       if(e.ctrlKey) {
         Animation.animate(editor3d, editor3d.position, {x: 0, y: 0, z: 0});
         break;
