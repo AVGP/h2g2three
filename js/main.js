@@ -62,7 +62,7 @@ document.body.appendChild( stats.domElement );
 
 // Events
 
-window.addEventListener('keyup', function(e) {
+window.addEventListener('keydown', function(e) {
   if(!e.altKey) return;
 
   switch(e.keyCode) {
