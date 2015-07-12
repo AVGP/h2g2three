@@ -4,7 +4,11 @@ var THREE = require('three'),
     Animation = require('./animation'),
     OBJLoader = require('./objloader'),
     OBJMTLLoader = require('./objmtlloader'),
-    WebcamTexture = require('./webcam-texture');
+    WebcamTexture = require('./webcam-texture'),
+    WebVRManager = require('./vendor/webvr-manager'),
+    VREffect = require('./vendor/VREffect'),
+    VRControls = require('./vendor/VRControls'),
+    WebVRPolyfill = require('./vendor/new-webvr-polyfill');
 
 // Allow cross-origin texture loading
 THREE.ImageUtils.crossOrigin = '';
@@ -40,9 +44,9 @@ if(window.location.search != "") {
   editorElem.textContent = "// Setup your scene here\n\nonRender = function() {\n  // Updates to the scene go here\n};\n\n// Alt+T toggles editor\n// Alt+Return run the code";
 }
 editorElem.style.backgroundColor = "white";
-editorElem.style.width  = "500px";
-editorElem.style.height = "300px";
-editorElem.style.opacity = "0.8";
+editorElem.style.width  = "550px";
+editorElem.style.height = "350px";
+editorElem.style.opacity = "0.9";
 
 editor3d.position.copy(EDITOR_INITIAL_POS);
 editor3d.userData.enabled = true;
@@ -97,7 +101,8 @@ function clearScene() {
 
 function runCode() {
   var scene  = World,
-  camera = World.getCamera();
+  camera = World.getCamera(),
+  renderer = World.getRenderer();
 
   clearScene();
   eval(editorElem.value);
