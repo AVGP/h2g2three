@@ -4,7 +4,7 @@ var tex = new WebcamTexture();
 
 var mesh = new THREE.Mesh(
   new THREE.BoxGeometry(100, 100, 100),
-  new THREE.MeshPhongMaterial({shininess: 100, metal: true, map: tex.texture})
+  new THREE.MeshLambertMaterial({shininess: 100, metal: true, map: tex.texture})
 );
 
 scene.add(mesh);

@@ -1,6 +1,6 @@
 var geometry   = new THREE.Geometry(),
-    material   = new THREE.PointCloudMaterial({size: 5}),
-    pointCloud = new THREE.PointCloud(geometry, material);
+    material   = new THREE.PointsMaterial({size: 5}),
+    pointCloud = new THREE.Points(geometry, material);
 
 var NUM_PARTICLES = 10000;
 
@@ -40,4 +40,5 @@ onRender = function() {
          geometry.vertices[i].velocity.z = -1 + Math.random() * 2;
     }
   }
+  geometry.verticesNeedUpdate = true;
 }
