@@ -1,6 +1,6 @@
 {
   "name": "three-livecode-arena",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "q": "^1.1.2",
-    "three": "0.71.0",
-    "three-world": "2.1.0",
+    "three": "0.73.0",
+    "three-world": "2.1.1",
     "tween": "^0.9.0",
     "tween.js": "^0.14.0"
   },
