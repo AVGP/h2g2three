@@ -23,6 +23,12 @@ var WebcamTexture	= function(){
 		}, function(error){
 			alert('you got no WebRTC webcam');
 		});
+	}else if(navigator.getUserMedia) {
+		navigator.getUserMedia({video: true}, function(stream){
+			video.src	= URL.createObjectURL(stream);
+		}, function(error){
+			alert('you got no WebRTC webcam');
+		});
 	}else	console.assert(false)
 
 
