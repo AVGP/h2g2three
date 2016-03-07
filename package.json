@@ -17,7 +17,7 @@
     "tween.js": "^16.3.1"
   },
   "devDependencies": {
-    "beefy": "^2.1.1",
+    "beefy": "^2.1.6",
     "browserify": "^12.0.1",
     "uglify-js": "^2.4.16",
     "watchify": "^3.6.0"
